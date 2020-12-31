@@ -1,9 +1,16 @@
 #!/usr/bin/env node
 
-const pkgJSON = require('./package.json')
+const pkgJSON = require('./package.json');
 const welcome = require('cli-welcome');
+const chalk = require('chalk');
+const log = console.log;
+const dim = chalk.dim;
+const italic = chalk.italic
+const twitterColor = chalk.hex(`#0077b5`).bold.inverse;
+
+
 welcome({
-	title: pkgJSON.name,
+	title: `Jamie Smith`,
 	tagline: `Get to know Jamie`,
 	description: pkgJSON.description,
 	version: pkgJSON.version,
@@ -12,8 +19,12 @@ welcome({
 	clear: true
 })
 
-console.log(`Jamie Smith
+log(`
+ 
+${italic('Very cool person. Loves eating cookies. Medium smart.')}
 
-Very cool person. Loves eating cookies. Medium smart.
+${twitterColor(` LinkedIn `)}: ${dim('https://linkedin.com/in/worldwidejamie')}
+`)
 
-LinkedIn: https://linkedin.com/in/worldwidejamie`)
+log(chalk.green.underline.inverse(`This is Green`));
+log()
