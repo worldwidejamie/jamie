@@ -1,6 +1,6 @@
 {
   "name": "meeting-jamie",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Learn who Jamie is using `npx meeting-jamie`",
   "bin": {
     "jamie": "index.js"
