@@ -12,5 +12,13 @@
     "jamie smith",
     "jamie",
     "smith"
-  ]
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "worldwidejamie/jamie",
+  "author": {
+    "name": "Jamie Smith",
+    "email": "jamie.smith@hey.com",
+    "url": "github.com/worldwidejamie"
+  }
 }
